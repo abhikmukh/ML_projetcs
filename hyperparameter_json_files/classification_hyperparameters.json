@@ -10,7 +10,7 @@
     "RandomForestClassifier": {
         "model": "RandomForestClassifier",
         "params": {
-            "n_estimators": [200, 500],
+            "n_estimators": [100, 500],
             "max_depth" : [4,5,6,7,8],
             "criterion" :["gini", "entropy"]
         }

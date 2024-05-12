@@ -32,14 +32,17 @@
             "alpha": [0.1, 0.01, 0.001, 0.0001], 
             "l1_ratio": [1, 0.7, 0.5, 0.2, 0], 
             "eta0": [0.01, 0.001, 0.0001],
-            "max_iter": [1000, 100000],
+            "max_iter": [1000, 10000],
             "learning_rate": ["constant", "optimal", "invscaling", "adaptive"]
         }
     },
-    "LinearRegression": {
-        "model": "LinearRegression",
+    "SVR": {
+        "model": "SVR",
         "params": {
-            "n_jobs": [1]
+            "kernel": ["linear", "rbf","poly"], 
+            "gamma": [0.001, 0.0001], 
+            "C": [1.5, 10],
+            "epsilon": [0.1, 0.5]
         }
     }
 }
